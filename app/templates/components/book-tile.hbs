@@ -1,0 +1,8 @@
+<li>
+  {{#link-to 'book' book.id}}{{book.title}} by {{book.author}}{{/link-to}}
+  {{#if isImageShowing}}
+    <p><img src={{book.image}} alt={{book.title}} {{action 'imageHide'}} > </p>
+  {{else}}
+    <button {{action 'imageShow'}} >Show image</button>
+  {{/if}}
+</li>

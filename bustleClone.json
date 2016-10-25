@@ -1,0 +1,17 @@
+{"books": [{
+    "title": "World War Z",
+    "author": "Max Brooks",
+    "genre": "fiction",
+    "image": "https://lovelace-media.imgix.net/uploads/1390/a9883d20-7848-0134-18ba-060e3e89e053.jpg?w=740&h=1126.602564102564&fit=crop&crop=faces&auto=format&q=70"
+  }, {
+    "title": "The Amityville Horror",
+    "author": "Jay Anson",
+    "genre": "fiction",
+    "image": "https://lovelace-media.imgix.net/uploads/1390/1bb298f0-784d-0134-cdf4-0aec1efe63a9.jpg?w=740&h=1191.5254237288134&fit=crop&crop=faces&auto=format&q=70"
+  }, {
+    "title": "Carrie",
+    "author": "Stephen King",
+    "genre": "fiction",
+    "image": "https://lovelace-media.imgix.net/uploads/1390/ee341ed0-784b-0134-18b7-060e3e89e053.jpg?w=740&h=1212.0689655172414&fit=crop&crop=faces&auto=format&q=70"
+  }]
+}
