@@ -1,6 +1,5 @@
-<h1>Books</h1>
-<ul>
+<div>
   {{#each model as |book|}}
-    {{book-tile book=book}}
+    {{book-tile book=book update="update" destroyBook="destroyBook"}}
   {{/each}}
-</ul>
+</div>

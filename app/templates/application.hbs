@@ -1,7 +1,35 @@
 <div class= "container">
   <header class= "jumbotron">
     <h1>Bustle Clone</h1>
-    {{#link-to 'index'}}Home!{{/link-to}}
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+    </button>
+
+
+      {{#link-to 'index'}}Home!{{/link-to}}
+      {{#link-to 'about'}}About Us{{/link-to}}
+      {{#link-to 'contact'}}Contact Us{{/link-to}}
+
+
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <!-- <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </header>
     {{outlet}}
   <hr>

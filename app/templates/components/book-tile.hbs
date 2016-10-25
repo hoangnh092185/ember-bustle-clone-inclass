@@ -1,8 +1,29 @@
-<li>
-  {{#link-to 'book' book.id}}{{book.title}} by {{book.author}}{{/link-to}}
-  {{#if isImageShowing}}
-    <p><img src={{book.image}} alt={{book.title}} {{action 'imageHide'}} > </p>
-  {{else}}
-    <button {{action 'imageShow'}} >Show image</button>
-  {{/if}}
-</li>
+<div class="form-group">
+  {{#link-to 'book' book.id}}
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-6">
+        {{#if isImageShowing}}
+          <p><img src={{book.image}} alt={{book.title}} {{action 'imageHide'}} > </p>
+        {{else}}
+          <button {{action 'imageShow'}}>
+            <img id="image-icon" src={{book.image}} alt={{book.title}} {{action 'imageHide'}}>
+          </button>
+        {{/if}}
+      </div>
+      <div class="col-sm-6">
+          <h3>{{book.title}}</h3>
+          <h4>{{book.detail}}</h4>
+          <div class="col-sm-6">
+            <h4>by {{book.author}}</h4>
+          </div>
+          <div class="col-sm-6">
+            <h4>Oct-25-2016</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+  {{/link-to}}
+  {{update-book book=book update="update"}}
+  <button {{action 'delete' book}}>Delete</button>
+</div>
